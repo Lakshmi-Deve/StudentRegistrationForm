@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+   
+    <style>
+        .form{
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .h1{
+            background-color: white;
+            color: blueviolet;
+            text-align: center;
+        }
+    </style>
+
+
+    
+</head>
+<body class="form">
+    <h1 class="h1">STUDENT REGISTRATION FORM</h1>
+    <form  name="form" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <table>
+    <tr>
+        <td><label for="fname">First name:</label></td>
+        <td><input type="text" id="fname" name="fname" required>(max 30 characters a-z and A-Z)</td>
+    </tr> 
+    
+    
+
+    <tr> 
+        <td><label for="lname">Last name:</label></td>
+        <td> <input type="text" id="lname" name="lname" required>(max 30 characters a-z and A-Z)</td> 
+    </tr> 
+   
+
+    <tr>
+        <td><label for="date of birth">Date of birth:</label></td>
+            
+           <td> <label for="jumpMenu">Date:</label>
+    <select id="jumpMenu" name="jump menu">
+        
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    </select>
+
+     <label for="jumpMenu">Month:</label>
+        <select id="jumpMenu" name="jump menu">
+            
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select> 
+    
+
+        <label for="jumpMenu">Year:</label>
+    <select id="jumpMenu" name="jump menu">
+       
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+    </select>
+        
+    </td>
+
+    </tr>
+
+    <tr>
+        <td><lable for="emailid">Email id:</lable></td>
+        <td><input type="email" id="emailid" name="emailid" required><td>
+    </tr>
+
+    <tr>
+        <td><label for="mobike">Mobile Number:</label></td>
+        <td><input type="tel" id="mobile" name="mobile" placeholder="12345-67890" 
+            pattern="[0-9]{5}-[0-9]{5}" required>(10 digit number)</td>
+    </tr>
+
+    <tr> 
+        <td><label for="gender">Gender:</label></td>
+        <td> Male<input type="radio" id="Male" name="gender">
+            Female<input type="radio" id="Female" name="gender"></td>
+    </tr>
+
+    <tr>
+        <td><lable for="address">Address:</lable></td>
+        <td><textarea type="address" cols="25" rows="5"></textarea><td>
+    </tr>
+
+    <tr>
+        <td><lable for="city">City:</lable></td>
+        <td><input type="text" id="text" name="text" required>(max 30 characters a-z and A-Z)<td>
+    </tr>
+
+    <tr>
+        <td><lable for="pincode">Pincode:</lable></td>
+        <td><input type="number" id="pincode" name="pincode" placeholder="123-456" 
+            pattern="[0-9]{3}-[0-9]{3}" required>(6 digit number)<td>
+    </tr>
+
+    <tr>
+        <td><lable for="state">State:</lable></td>
+        <td><input type="text" id="text" name="text" required>(max 30 characters a-z and A-Z)<td>
+    </tr>
+
+    <tr>
+        <td><lable for="country">Country:</lable></td>
+        <td><input type="text" id="text" name="text" required><td>
+    </tr>
+
+    <tr>
+        <td><lable for="hobbies">Hobbies:</lable></td>
+        <td>
+            <label for="drawing">Drawing</label>
+            <input type="checkbox" id="drawing" name="drawing">
+            
+            <label for="singing">Singing</label>
+            <input type="checkbox" id="singing" name="singing">
+            
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" id="dancing" name="dancing"></td>
+         </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td><label for="qualification">Qualification:</label></td>
+            <td><label for="SI.No">SI.No.</label></td>
+            <td><label for="examination">Examination</label></td>
+            <td><label for="board">Board</label></td>
+            <td><label for="percentage">Percentage</label></td>
+            <td><label for="year of passing">Year of passing</label></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><label for="1">1</label></td>
+            <td><label for="class X">Class X</label></td>
+            <td><input type="text"></td>
+            <td><input type="percentage"></td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><label for="2">2</label></td>
+            <td><label for="class XII">Class XII</label></td>
+            <td><input type="text"></td>
+            <td><input type="percentage"></td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><label for="3">3</label></td>
+            <td><label for="graduation">Graduation</label></td>
+            <td><input type="text"></td>
+            <td><input type="percentage"></td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><label for="4">4</label></td>
+            <td><label for="masters">Masters</label></td>
+            <td><input type="text"></td>
+            <td><input type="percentage"></td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr> 
+            <td><label for="courses applied for">Courses applied for:</label></td>
+            <td> BCA<input type="radio" id="BCA" name="courses applied for">
+                B.Com<input type="radio" id="B.Com" name="courses applied for">
+                B.Sc<input type="radio" id="B.Sc" name="courses applied for">
+                B.A<input type="radio" id="B.A" name="courses applied for"></td>
+            </tr>
+     
+    </table>
+
+    <br> <br> <br> 
+
+    <center><input type="submit" value="Submit">
+    <input type="reset" value="Reset"></center>
+    </form>
+
+</body>
+</html>
